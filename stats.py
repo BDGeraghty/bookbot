@@ -12,3 +12,4 @@ def get_chars_dict(text):
         else:
             chars[lowered] = 1
     return chars
+
