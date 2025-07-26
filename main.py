@@ -32,7 +32,6 @@ def main():
             print(f"{char}: {count}")
     print("============= END ===============")
    
-
 def get_book_text(path):
     with open(path) as f:
         return f.read()
