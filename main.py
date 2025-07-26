@@ -4,6 +4,27 @@ import sys
 
 
 def main():
+    """
+    Main function to run the BookBot analysis.
+    
+    Reads a book file specified via command line argument and performs
+    text analysis including word count and character frequency analysis.
+    Displays formatted results showing total word count and character
+    counts sorted by frequency (alphabetic characters only).
+    
+    Command line usage:
+        python3 main.py <path_to_book>
+    
+    Args:
+        None (reads from sys.argv)
+    
+    Returns:
+        None (prints results to stdout)
+    
+    Raises:
+        SystemExit: If incorrect number of command line arguments provided
+        FileNotFoundError: If the specified book file cannot be found
+    """
 
     book_path = ""
     if len(sys.argv) != 2:
